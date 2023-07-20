@@ -1,3 +1,5 @@
+import time
+
 from flask import Flask, render_template
 from api import param
 from api.api import pictrue
@@ -8,7 +10,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return render_template('index.html', **config.info)
+    update_time = time.strftime('%Y年%m月%d日 %H:%M:%S')
+    return render_template('index.html', **config.info, time=update_time)
 
 
 @app.route('/api/')

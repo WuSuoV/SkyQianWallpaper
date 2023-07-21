@@ -416,9 +416,9 @@ function hoverJigsawSearch(obj) {
 // 同步改变浏览器标题
 function changeTitle(obj) {
     if ($(obj).html() == '') {
-        $('title').html('小笨电脑壁纸-小笨在线壁纸-在线搜索');
+        $('title').html('YiOVE壁纸');
     } else {
-        $('title').html($(obj).html() + ' - 在线壁纸');
+        $('title').html($(obj).html() + ' - YiOVE壁纸');
     }
 }
 
